@@ -1,0 +1,17 @@
+# Example experiment config. Every run should be reproducible from a file like this.
+seed: 42
+data:
+  manifest: data/manifests/train.csv
+  protocol: leave_one_generator_out
+  held_out_generator: null   # set per run
+  image_size: 224
+model:
+  name: resnet50
+  pretrained: true
+training:
+  epochs: 10
+  batch_size: 64
+  learning_rate: 1.0e-4
+logging:
+  tracker: wandb
+  project: provenancelens

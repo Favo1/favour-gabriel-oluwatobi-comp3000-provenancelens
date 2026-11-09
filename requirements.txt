@@ -1,0 +1,19 @@
+# Core ML stack. Once your environment works, pin exact versions:
+#   pip freeze > requirements.lock   (and commit it)
+torch
+torchvision
+timm
+open_clip_torch
+transformers
+scikit-learn
+numpy
+pandas
+pillow
+matplotlib
+pyyaml
+tqdm
+grad-cam
+wandb          # or mlflow
+# Dev tools
+pytest
+ruff
